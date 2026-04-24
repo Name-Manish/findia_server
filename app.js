@@ -7,7 +7,7 @@ const cors = require("cors");
 const app = express();
 app.use(cookie());
 app.use(cors({
-    origin:"http://localhost:3000",
+    origin:"https://findia.onrender.com",
     credentials:true
 }));
 //all middlewares
