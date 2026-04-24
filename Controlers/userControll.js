@@ -99,7 +99,7 @@ exports.profile = async(req,res)=>{
 exports.logout = async(req,res)=>{
     res.clearCookie("token", {
         httpOnly: true,
-        secure: false // production me true
+        secure: true // production me true
     });
 
     res.json({ message: "Logged out successfully" });
